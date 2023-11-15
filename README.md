@@ -1,1 +1,3 @@
-# Website landing page untuk bisnis
+Website landing page untuk bisnis
+
+Responsive : Yes
