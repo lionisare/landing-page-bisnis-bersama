@@ -261,7 +261,7 @@ header.sticky {
   width: 100%;
 }
 .testimoni {
-  height: 70vh;
+  height: 80vh;
   text-align: center;
   padding: var(--padding-6);
   background: var(--color-1);
@@ -281,36 +281,66 @@ header.sticky {
   font-weight: 700;
 }
 .testimoni-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 0.5rem;
+  position: relative;
+  width: 100%;
+  max-width: auto;
+  overflow: hidden;
 }
 .box-testimoni {
   width: 100%;
-  margin-top: 1rem;
   padding: 1.5rem 1rem;
   text-align: center;
   background: var(--color-1);
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 5px 25px rgb(1 1 3 / 5%);
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  /* box-shadow: 0 5px 25px rgb(1 1 3 / 5%); */
 }
-.image-testimoni img {
-  width: 130px;
-  height: 130px;
+.testimoni-container .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimoni-container .slide img {
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
-.star-testimoni i {
-  color: var(--color-4);
+.box-testimoni .details {
+  width: 760px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
-.box-testimoni h3 {
+.box-testimoni .details h3 {
+  margin-top: 0.6rem;
   font-size: 1.3rem;
   color: var(--color-3);
 }
-.box-testimoni p {
-  font-size: 1rem;
+.box-testimoni .details span {
+  font-size: 0.8rem;
   color: var(--color-3);
+}
+.box-testimoni .details p {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: var(--color-5);
   font-weight: 300;
+}
+.tab-slide {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.tab-slide::after,
+.tab-slide::before {
+  color: var(--color-5);
+  font-size: 20px;
+}
+.swiper-pagination-bullet {
+  background-color: var(--color-4);
 }
 .brand {
   padding: var(--padding-6);

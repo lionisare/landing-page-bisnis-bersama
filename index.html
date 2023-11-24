@@ -7,6 +7,8 @@
     <title>Bisnis Bersama</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
@@ -114,47 +116,42 @@
             <h2>Testimoni</h2>
             <p>Apa kata mereka tentang <span>BISNIS BERSAMA</span></p>
         </div>
-        <div class="testimoni-container">
-            <div class="box-testimoni">
-                <div class="image-testimoni">
-                    <img src="images/p1.jpg">
+        <div class="testimoni-container mySwiper">
+            <div class="box-testimoni swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="images/p1.jpg" alt="testimoni">
+                    <div class="details">
+                        <h3>Martin</h3>
+                        <span>CEO Kampung Ikan</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio placeat iste, est aliquid
+                            ducimus inventore reiciendis sit cumque hic. Numquam eaque tempora officiis, maxime
+                            reiciendis deleniti sunt vero minima expedita?</p>
+                    </div>
                 </div>
-                <div class="star-testimoni">
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
+                <div class="slide swiper-slide">
+                    <img src="images/p2.jpg" alt="testimoni">
+                    <div class="details">
+                        <h3>Martin</h3>
+                        <span>CEO Kampung Ikan</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio placeat iste, est aliquid
+                            ducimus inventore reiciendis sit cumque hic. Numquam eaque tempora officiis, maxime
+                            reiciendis deleniti sunt vero minima expedita?</p>
+                    </div>
                 </div>
-                <h3>Martin</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, exercitationem!</p>
+                <div class="slide swiper-slide">
+                    <img src="images/p3.jpg" alt="testimoni">
+                    <div class="details">
+                        <h3>Martin</h3>
+                        <span>CEO Kampung Ikan</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio placeat iste, est aliquid
+                            ducimus inventore reiciendis sit cumque hic. Numquam eaque tempora officiis, maxime
+                            reiciendis deleniti sunt vero minima expedita?</p>
+                    </div>
+                </div>
             </div>
-            <div class="box-testimoni">
-                <div class="image-testimoni">
-                    <img src="images/p2.jpg">
-                </div>
-                <div class="star-testimoni">
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
-                </div>
-                <h3>Jesica</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, nihil.</p>
-            </div>
-            <div class="box-testimoni">
-                <div class="image-testimoni">
-                    <img src="images/p3.jpg">
-                </div>
-                <div class="star-testimoni">
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
-                    <i class="ri-star-s-fill"></i>
-                </div>
-                <h3>Michaela</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, nihil.</p>
-            </div>
+            <div class="swiper-button-prev tab-slide"></div>
+            <div class="swiper-button-next tab-slide"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section class="brand" id="brand">
@@ -215,6 +212,8 @@
             </p>
         </div>
     </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
